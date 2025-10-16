@@ -1,3 +1,18 @@
+/* ===== Reusable Section Title ===== */
+.title-box {
+  font-size: 1.5rem;
+  color: #2b7ffc;
+  margin-bottom: 15px;
+  background-color: #dce7ff66;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-weight: 400;
+}
+
 /* ===== BASIC RESET ===== */
 * {
   margin: 0;
@@ -264,6 +279,226 @@ header {
 }
 
 /* ===== HERO SECTION ===== */
+
+/* ===== WHY CHOOSE US SECTION ===== */
+.why-choose-section {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.why-choose-container {
+  display: flex;
+  align-items: flex-start; /* optional: aligns top edges */
+  justify-content: space-between;
+  flex-wrap: wrap; /* makes it responsive on small screens */
+}
+
+/* Left and Right sides take 50% each */
+.why-choose-left,
+.why-choose-right {
+  flex: 1 1 50%; /* grow:1, shrink:1, basis:50% */
+  max-width: 50%; /* ensures max 50% width */
+  box-sizing: border-box;
+}
+
+/* Left Side */
+.why-choose-left {
+  flex: 1;
+  min-width: 350px;
+}
+
+.why-choose-left .why-tittle {
+  text-align: left;
+  font-size: 1.5rem;
+  color: #2b7ffc;
+  margin-bottom: 15px;
+  background-color: #dce7ff66;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: block;
+  font-weight: 400;
+}
+
+.why-choose-left .section-description {
+  color: #696565;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+.why-choose-left .section-heading {
+  color: #121212;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.why-features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.feature-icon {
+  width: 45px;
+  height: 45px;
+}
+/* Feature Icon Wrapper: Rounded Background */
+.feature-icon-wrapper {
+  width: 100px; /* circle width */
+  height: 70px; /* circle height */
+  background-color: #2b7ffc; /* light blue circle */
+  border-radius: 50%; /* makes it a perfect circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon inside wrapper */
+.feature-icon-wrapper .feature-icon {
+  width: 30px; /* smaller than wrapper */
+  height: 30px;
+}
+
+.feature-item h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.feature-item p {
+  margin: 5px 0 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+/* Right Side Grid */
+.right-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns: left bigger, right smaller */
+  grid-auto-rows: auto;
+  gap: 20px;
+}
+
+/* Top Large Image */
+.grid-top img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Bottom Left Column */
+/* ===== Bottom Left Column: Compact ===== */
+
+/* Center the entire bottom-left block */
+.grid-bottom-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* compact spacing */
+  align-items: center; /* centers horizontally */
+  justify-content: center; /* centers vertically if height is fixed */
+  text-align: center; /* centers text inside */
+}
+
+/* Client Images Top */
+.client-images-top {
+  display: flex;
+  gap: 0; /* images overlap, no extra gap */
+}
+
+.client-images-top img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  margin-left: -10px; /* overlap for compactness */
+}
+
+/* Client Feedback Title */
+.client-feedback-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1c1c1c;
+  margin: 0; /* remove default spacing */
+}
+
+/* Rating Row */
+.client-rating-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px; /* smaller padding */
+  border-radius: 10px;
+  gap: 8px;
+}
+
+/* Left: Rating Point */
+.rating-left .rating-point {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Right: Text + Stars */
+.rating-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.rating-right .rating-text {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 0;
+}
+
+.rating-right .rating-stars {
+  color: #ffb400;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* Bottom Right Column */
+.grid-bottom-right img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .right-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-bottom-left,
+  .grid-bottom-right {
+    width: 100%;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .why-choose-container {
+    flex-direction: column;
+  }
+
+  .grid-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .right-image img {
+    width: 100%;
+  }
+}
 
 /* ===== PRICING SECTION ===== */
 .pricing-section {

@@ -1,0 +1,61 @@
+#hero {
+  padding: 80px 0;
+  background-color: #f5f8fa;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-left h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.heroleft-tittle {
+  color: var(--primary-color);
+}
+
+.hero-left p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: var(--secondary-color);
+}
+
+.btn-hero {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero-badges {
+  margin-top: 2rem;
+  display: flex;
+  gap: 24px;
+}
+
+.badge h2 {
+  font-size: 2rem;
+  color: var(--btn-color);
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.badge p {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
