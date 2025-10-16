@@ -280,6 +280,119 @@ header {
 
 /* ===== HERO SECTION ===== */
 
+/* about is section */
+
+/* ========== ABOUT US SECTION ========== */
+/* ========== ABOUT US SECTION ========== */
+.about-us-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+/* Consistent Container Width */
+.about-us-container {
+  width: 90%;
+  max-width: 1200px; /* same as other sections */
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ===== Left Side: Image ===== */
+.about-us-left {
+  flex: 1 1 50%;
+  max-width: 50%;
+}
+
+.about-us-left img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* ===== Right Side: Content ===== */
+.about-us-right {
+  flex: 1 1 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Small Title */
+.about-small-title {
+  font-size: 1.5rem;
+  color: #2b7ffc;
+  font-weight: 500;
+  background-color: #dce7ff66;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+/* Headline */
+.about-headline {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #121212;
+  line-height: 1.3;
+}
+
+/* Description */
+.about-description {
+  font-size: 1rem;
+  color: #696565;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* ===== Badges ===== */
+.about-badges {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.badge {
+  border-radius: 12px;
+  text-align: left;
+}
+
+.badge h3 {
+  font-size: 1.6rem;
+  color: #007bff;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.badge p {
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 500;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .about-us-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-us-left,
+  .about-us-right {
+    max-width: 100%;
+  }
+
+  .about-badges {
+    justify-content: center;
+  }
+}
+
 /* ===== WHY CHOOSE US SECTION ===== */
 .why-choose-section {
   background-color: #fff;
