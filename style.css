@@ -471,9 +471,7 @@ header {
   min-width: 350px;
   padding-top: 20px;
   padding-bottom: 20px;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
+
   text-align: left;
 }
 
@@ -824,6 +822,14 @@ header {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   display: block;
   object-fit: cover;
+}
+@media (max-width: 1440px) {
+  .video-container {
+    position: relative;
+    width: 90%;
+    max-width: 82%;
+    margin: 0 auto;
+  }
 }
 
 /* Play Button Overlay */
@@ -1253,10 +1259,17 @@ footer {
   .why-choose-left .why-tittle {
     font-size: 1.2rem;
     padding: 8px 16px;
+    text-align: center;
+  }
+  .why-tittle {
+    margin: 0 auto; /* centers the block horizontally */
+    text-align: center; /* centers the text inside */
+    display: block; /* ensures margin auto works */
   }
 
   .why-choose-left .section-heading {
     font-size: 1.6rem;
+    text-align: center;
   }
 
   .why-choose-left .section-description {
