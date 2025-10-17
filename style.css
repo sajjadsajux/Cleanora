@@ -477,7 +477,7 @@ header {
   text-align: left;
   font-size: 1.5rem;
   color: #2b7ffc;
-  margin-bottom: 15px;
+  margin-bottom: 6px;
   background-color: #dce7ff66;
   width: fit-content;
   padding: 10px 20px;
@@ -497,13 +497,12 @@ header {
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.6;
-  margin-bottom: 25px;
 }
 
 .why-features {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
   align-items: center;
   justify-items: center;
 }
@@ -609,7 +608,7 @@ header {
 
 /* Left: Rating Point */
 .rating-left .rating-point {
-  font-size: 1.1rem;
+  font-size: 2rem;
   font-weight: 700;
   margin: 0;
 }
@@ -843,8 +842,8 @@ header {
 
 /* Triangle (Polygon) Play Icon */
 .play-icon {
-  width: 0;
-  height: 0;
+  width: 20px;
+  height: 20px;
   border-left: 18px solid #ffff; /* color of triangle */
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
@@ -1717,4 +1716,62 @@ footer {
     border-top: 6px solid transparent;
     border-bottom: 6px solid transparent;
   }
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+  .hero-lefticon {
+    position: absolute;
+    left: 20px;
+    top: 170px;
+  }
+  .hero-lefticon img {
+    width: 80px;
+  }
+  .hero-container {
+    align-items: center;
+  }
+}
+/* ===== GLOBAL CENTER FIX ===== */
+
+/* Center all major section containers */
+.about-us-container,
+.why-choose-container,
+.pricing-cards,
+.video-container,
+.footer-container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Ensure content inside sections is centered on medium and small screens */
+@media (max-width: 1200px) {
+  .about-us-right,
+  .why-choose-left,
+  .why-choose-right {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .why-features,
+  .about-badges {
+    justify-content: center;
+  }
+}
+
+/* Center “Why Choose Us” left title block for laptops/tablets */
+@media (max-width: 1024px) {
+  .why-choose-left .why-tittle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Ensure all section titles stay centered */
+.title-box,
+.section-title {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
 }

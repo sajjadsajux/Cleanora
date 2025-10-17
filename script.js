@@ -9,7 +9,7 @@ const pricingPlans = [
   },
   {
     name: "STANDARD",
-    price: "$750",
+    price: "$650",
     description: "We believe in honest, upfront pricing with no hidden charges. Choose a plan that suits your needs—whether it's a one-time deep clean or a regular maintenance schedule.",
     features: ["2 Bedrooms + 2 Bathrooms", "Full floor cleaning", "Detailed dusting", "Full kitchen clean", "Trash removal"],
     bgColor: "#F6FCF8", // light green background
@@ -17,7 +17,7 @@ const pricingPlans = [
   },
   {
     name: "PREMIUM",
-    price: "$999",
+    price: "$950",
     description: "We believe in honest, upfront pricing with no hidden charges. Choose a plan that suits your needs—whether it's a one-time deep clean or a regular maintenance schedule.",
     features: ["3 Bedrooms + 3 Bathrooms", "Deep floor sanitizing", "Furniture polishing", "Advanced kitchen clean", "Trash removal"],
     bgColor: "#F1F8FF", // light yellow background
