@@ -474,7 +474,7 @@ header {
   align-items: center;
   justify-content: center;
   justify-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 .why-choose-left .why-tittle {
@@ -1651,6 +1651,7 @@ footer {
   .footer-container {
     grid-template-columns: 1fr;
     gap: 20px;
+    text-align: center;
   }
 
   .footer-col h2 {
@@ -1672,6 +1673,10 @@ footer {
   .footer-socials img {
     width: 24px;
     height: 24px;
+  }
+  .footer-socials {
+    justify-content: center;
+    align-items: center;
   }
 }
 
